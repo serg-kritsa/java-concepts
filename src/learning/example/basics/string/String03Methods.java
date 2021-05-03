@@ -1,4 +1,4 @@
-package string;
+package learning.example.basics.string;
 
 public class String03Methods {
 

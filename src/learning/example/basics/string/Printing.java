@@ -1,4 +1,4 @@
-package string;
+package learning.example.basics.string;
 
 public class Printing {
     public static void main(String[] args) {
