@@ -1,0 +1,66 @@
+package syntax.lang;
+
+public class MathDemo {
+    public static void main(String[] args) {
+        System.out.print("Absolute :");
+        System.out.println(Math.abs(-123)); // 123
+        
+        System.out.print("Absolute :");
+        System.out.println(StrictMath.abs(-123)); // 123
+        
+        System.out.print("Cube Root :");
+        System.out.println(Math.cbrt(27)); // 3.0
+        
+        System.out.print("Exact Decrement :");
+       // System.out.println(Math.decrementExact(Integer.MIN_VALUE));
+        
+        int i=Integer.MIN_VALUE;
+        i--;
+        System.out.println(i); // 2147483647
+        
+        System.out.print("Exponent value in Floating Point Rep. :");
+        System.out.println(Math.getExponent(123.45)); // 6
+               
+        System.out.print("Round Division :");
+        System.out.println(Math.floorDiv(50, 9)); // 5
+        
+        System.out.println("e power x :");
+        System.out.println(Math.exp(1)); 	   // 2.718281828459045
+        System.out.println(StrictMath.exp(1)); // 2.7182818284590455
+       
+        System.out.print("Log base 10 :");
+        System.out.println(Math.log10(100)); // 2.0
+        
+        System.out.print("Maximum :");
+        System.out.println(Math.max(100, 50)); // 100
+        
+        System.out.print("Tan :");
+        System.out.println(Math.tan(45*Math.PI/180)); // 0.9999999999999999
+       
+        System.out.print("Convert to Radians :");
+        System.out.println(Math.toRadians(90)); // 1.5707963267948966
+        
+        System.out.print("Convert to Degree :");
+        System.out.println(Math.toDegrees(Math.atan(1))); // 45.0
+
+        System.out.print("Convert To Degree :");
+        System.out.println(StrictMath.toDegrees(StrictMath.tanh(1))); // 43.636130838093536
+
+        System.out.print("Random :");
+        double d = Math.random();
+        System.out.println(d); // 0..1
+        System.out.println(Math.round(d));
+        System.out.println(Math.round(d*100));
+        
+        System.out.print("Power :");
+        System.out.println(Math.pow(2, 3)); // 8.0
+        
+        System.out.print("Excact Product :");
+        System.out.println(Math.multiplyExact(100, 200)); // 20000
+        
+        System.out.print("Next Float Value :");
+        System.out.println(Math.nextAfter(12.5, 11)); // 12.499999999999998
+        
+        
+    }   
+}
