@@ -1,7 +1,18 @@
 package syntax.method;
 
-public class MethodExample02Overloading { // overloading methods
+class OverloadingDemo {
+    public int max(int a,int b) {
+        return a>b?a:b;
+    }
     
+    public int max(int a,int b,int c) {
+        if(a>b && a>c) return a;
+        else if(b>c) return b;
+        return c;
+    }
+}
+
+public class MethodExample04Overloading { // overloading methods
     // overloaded argument type
 	boolean validate(String name) {
         return name.matches("[a-zA-Z\\s]+");
@@ -38,6 +49,9 @@ public class MethodExample02Overloading { // overloading methods
         return B;
     }
     
-    public static void main(String[] args) {} 
-      
+    public static void main(String[] args) {
+        OverloadingDemo t=new OverloadingDemo();
+        t.max(10,5);
+        t.max(10,15,5);
+    }
 }
