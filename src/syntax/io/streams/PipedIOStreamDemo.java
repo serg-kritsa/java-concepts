@@ -1,4 +1,4 @@
-package syntax.io;
+package syntax.io.streams;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,8 +9,7 @@ import java.io.PipedOutputStream;
 class Producer extends Thread {
     OutputStream os;    
     public Producer(OutputStream o) {        os=o;    }    
-    public void run() {
-    	
+    public void run() {    	
         int count=1;        
         while(true) {
             try{

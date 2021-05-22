@@ -2,9 +2,11 @@ package syntax.io;
 
 import java.io.RandomAccessFile;
 
-public class RandomAccessDemo {
+import syntax.io.streams.IOStreamLib;
+
+public class RandomAccessFileDemo {
     public static void main(String[] args) throws Exception {
-    	IOStreamLib.writeContentInFile("src.txt", "ABCDEFGHIJK");
+    	IOStreamLib.saveText("ABCDEFGHIJK", "src.txt");
         RandomAccessFile rf = new RandomAccessFile("src.txt","rw");
 
 //        System.out.println((char)rf.read()); // A

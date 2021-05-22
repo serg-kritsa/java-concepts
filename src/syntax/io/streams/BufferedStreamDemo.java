@@ -1,8 +1,8 @@
-package syntax.io;
+package syntax.io.streams;
 
 import java.io.*;
 
-public class BufferedDemo {
+public class BufferedStreamDemo {
 	public static void readAfterReset(BufferedInputStream bis) throws IOException   {
         System.out.print((char)bis.read());
         System.out.print((char)bis.read());
@@ -61,7 +61,7 @@ public class BufferedDemo {
 		System.out.println(">>>"+br.readLine());
 	}
     public static void main(String[] args) throws Exception {
-    	IOStreamLib.writeContentInFile("dest.txt", "Learn Java Programming");
+    	IOStreamLib.saveText("Learn Java Programming", "dest.txt");
     	FileInputStream fis = new FileInputStream("dest.txt");
     	BufferedInputStream bis = new BufferedInputStream(fis);
 //        System.out.println(fis.markSupported()); // false
