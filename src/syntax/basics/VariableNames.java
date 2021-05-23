@@ -9,7 +9,7 @@ public class VariableNames {
         
         int rollNumberOfStudent;
         float averageMarksOfClass;
-        
     }
     
 }
+

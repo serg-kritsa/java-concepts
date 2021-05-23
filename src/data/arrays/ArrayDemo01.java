@@ -6,6 +6,8 @@ public class ArrayDemo01 {
         int B[]={1,2,3,4,5}; // ERROR if declaration and initialization are separated
         int C[];
         C=new int[10];        
+        String[] data01 = new String[]{"A","B","C"};
+        String[] data02 = {"A","B","C"};
 
         System.out.println(A.length); // 10 
         for(int i=0;i<A.length;i++) {
